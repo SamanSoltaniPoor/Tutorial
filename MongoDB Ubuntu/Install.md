@@ -86,7 +86,7 @@ systemctl enable mongod
 <br>
 
 
-### 7 - Check MongoDB
+### 8 - Check MongoDB
 ```sh
 systemctl status mongod
 ```
