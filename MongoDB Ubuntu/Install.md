@@ -1,6 +1,7 @@
 ### Install MongoDB
 
-- 1
+
+- Check Ubuntu 
 ```sh
 cat /etc/lsb-release
 ```
