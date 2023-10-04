@@ -94,7 +94,7 @@ result :
 ```sh
 ● mongod.service - MongoDB Database Server
 Loaded   : loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
-Active   : active (running) since Wed 2023-10-04 17:40:19 UTC; 1min 36s ago
+Active   : active (running) since Wed 2023-10-04 17:40:19 UTC; 1min 36s ago   <---
 Docs     : https://docs.mongodb.org/manual
 Main PID : 3152 (mongod)
 Memory   : 150.1M
