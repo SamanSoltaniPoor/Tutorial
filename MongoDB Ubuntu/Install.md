@@ -4,7 +4,7 @@
 <br>
 
 
-#### 1 - Platform Support
+#### Step-01 - Platform Support
 22.04 LTS ("Jammy")\
 20.04 LTS ("Focal")\
 only supports the 64-bit versions
@@ -29,7 +29,7 @@ Hardware Model   : KVM
 <br>
 
 
-#### 2 - Import the public key used by the package management system
+#### Step-02 - Import the public key used by the package management system
 ```sh
 sudo apt-get install gnupg curl
 ```
@@ -41,7 +41,7 @@ curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyri
 <br>
 
 
-#### 3 - Create a list file for MongoDB
+#### Step-03 - Create a list file for MongoDB
 ```sh
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 ```
@@ -50,7 +50,7 @@ echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gp
 <br>
 
 
-#### 4 - Reload local package database
+#### Step-04 - Reload local package database
 ```sh
 sudo apt-get update
 ```
@@ -59,7 +59,7 @@ sudo apt-get update
 <br>
 
 
-#### 5 - Install MongoDB
+#### Step-05 - Install MongoDB
 ```sh
 sudo apt-get install -y mongodb-org
 ```
@@ -68,7 +68,7 @@ sudo apt-get install -y mongodb-org
 <br>
 
 
-#### 6 - Start MongoDB
+#### Step-06 - Start MongoDB
 ```sh
 systemctl start mongod
 ```
@@ -77,7 +77,7 @@ systemctl start mongod
 <br>
 
 
-#### 7 - Start automatically MongoDB after reboot
+#### Step-07 - Start automatically MongoDB after reboot
 ```sh
 systemctl enable mongod
 ```
@@ -86,7 +86,7 @@ systemctl enable mongod
 <br>
 
 
-#### 8 - Check MongoDB
+#### Step-08 - Check MongoDB
 ```sh
 systemctl status mongod
 ```
@@ -107,7 +107,7 @@ CGroup: /system.slice/mongod.service
 <br>
 
 
-#### 9 - Begin using MongoDB
+#### Step-09 - Begin using MongoDB
 To get started with MongoDB
 ```sh
 mongosh
@@ -117,7 +117,7 @@ mongosh
 <br>
 
 
-#### Fast
+#### Fast Step
 ```sh
 sudo apt-get install gnupg curl; curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor; echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list; sudo apt-get update; sudo apt-get install -y mongodb-org; systemctl start mongod; systemctl enable mongod; mongosh
 ```
