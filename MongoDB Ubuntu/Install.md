@@ -1,4 +1,5 @@
 # Install MongoDB on Ubuntu
+- [Fast Step](#fast-step)
 - [01 - Platform Support](#-01-step--platform-support)
 - [02 - Import the public key used by the package management system](#-02-step--import-the-public-key-used-by-the-package-management-system)
 - [03 - Create a list file for MongoDB](#-03-step--create-a-list-file-for-mongodb)
@@ -8,8 +9,15 @@
 - [07 - Start automatically MongoDB after reboot](#-07-step--start-automatically-mongodb-after-reboot)
 - [08 - Check MongoDB](#-08-step--check-mongodb)
 - [09 - Begin using MongoDB](#-09-step--begin-using-mongodb)
-- [Fast Step](#fast-step)
 
+
+<br>
+
+
+## Fast Step
+```sh
+sudo apt-get install gnupg curl; curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor; echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list; sudo apt-get update; sudo apt-get install -y mongodb-org; systemctl start mongod; systemctl enable mongod; mongosh
+```
 
 <br>
 
@@ -121,13 +129,4 @@ CGroup: /system.slice/mongod.service
 To get started with MongoDB
 ```sh
 mongosh
-```
-
-
-<br>
-
-
-# Fast Step
-```sh
-sudo apt-get install gnupg curl; curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor; echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list; sudo apt-get update; sudo apt-get install -y mongodb-org; systemctl start mongod; systemctl enable mongod; mongosh
 ```
