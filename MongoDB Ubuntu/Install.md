@@ -90,6 +90,23 @@ systemctl enable mongod
 ```sh
 systemctl status mongod
 ```
+result :
+```sh
+● mongod.service - MongoDB Database Server
+Loaded   : loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+Active   : active (running) since Wed 2023-10-04 17:40:19 UTC; 1min 36s ago
+Docs     : https://docs.mongodb.org/manual
+Main PID : 3152 (mongod)
+Memory   : 150.1M
+CPU      : 2.326s
+CGroup: /system.slice/mongod.service
+└─3152 /usr/bin/mongod --config /etc/mongod.conf
+```
+
+
+
+
+
 
 
 
