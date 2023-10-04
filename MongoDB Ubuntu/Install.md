@@ -5,13 +5,13 @@
 
 
 ### 1 - Platform Support
-- 22.04 LTS ("Jammy")
-- 20.04 LTS ("Focal")
-- only supports the 64-bit versions
+22.04 LTS ("Jammy")\
+20.04 LTS ("Focal")\
+only supports the 64-bit versions
 ```sh
 hostnamectl
 ```
-result :
+Output :
 ```sh
 Icon name        : computer-vm
 Chassis          : vm
@@ -90,7 +90,7 @@ systemctl enable mongod
 ```sh
 systemctl status mongod
 ```
-result :
+Output :
 ```sh
 ● mongod.service - MongoDB Database Server
 Loaded   : loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
@@ -104,10 +104,11 @@ CGroup: /system.slice/mongod.service
 ```
 
 
+<br>
 
 
-
-
-
-
-
+### 9 - Begin using MongoDB
+To get started with MongoDB
+```sh
+mongosh
+```
