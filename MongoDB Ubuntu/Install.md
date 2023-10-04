@@ -69,10 +69,15 @@ sudo apt-get install -y mongodb-org
 
 
 ### 6 - Start MongoDB
-Start MongoDB and enable it to start automatically after reboot
 ```sh
 systemctl start mongod
 ```
+
+
+<br>
+
+
+### 7 - Start automatically MongoDB after reboot
 ```sh
 systemctl enable mongod
 ```
