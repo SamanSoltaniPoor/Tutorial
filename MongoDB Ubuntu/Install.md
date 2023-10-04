@@ -69,67 +69,23 @@ sudo apt-get install -y mongodb-org
 
 
 ### 6 - Start MongoDB
-
+Start MongoDB and enable it to start automatically after reboot
 ```sh
-hostnamectl
+systemctl start mongod
+```
+```sh
+systemctl enable mongod
 ```
 
 
 <br>
 
 
-### 1 - Platform Support
-- 22.04 LTS ("Jammy")
-- 20.04 LTS ("Focal")
-- only supports the 64-bit versions
+### 7 - Check MongoDB
 ```sh
-hostnamectl
+systemctl status mongod
 ```
 
 
-<br>
 
 
-### 1 - Platform Support
-- 22.04 LTS ("Jammy")
-- 20.04 LTS ("Focal")
-- only supports the 64-bit versions
-```sh
-hostnamectl
-```
-
-
-<br>
-
-
-### 1 - Platform Support
-- 22.04 LTS ("Jammy")
-- 20.04 LTS ("Focal")
-- only supports the 64-bit versions
-```sh
-hostnamectl
-```
-
-
-<br>
-
-
-### 1 - Platform Support
-- 22.04 LTS ("Jammy")
-- 20.04 LTS ("Focal")
-- only supports the 64-bit versions
-```sh
-hostnamectl
-```
-
-
-<br>
-
-
-### 1 - Platform Support
-- 22.04 LTS ("Jammy")
-- 20.04 LTS ("Focal")
-- only supports the 64-bit versions
-```sh
-hostnamectl
-```
