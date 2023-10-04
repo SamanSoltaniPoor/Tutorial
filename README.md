@@ -1,5 +1,5 @@
 # LearnBook
-powered by : [SamanSoltaniPoor.com](https://SamanSoltaniPoor.com)
+powered by : [SamanSoltaniPoor](https://SamanSoltaniPoor.com)
 
 <br>
 
