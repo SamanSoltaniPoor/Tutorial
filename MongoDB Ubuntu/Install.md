@@ -1,12 +1,15 @@
 # Install MongoDB on Ubuntu
 - [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
-- [01 - Platform Support](#-01-step--platform-support)
+- [02 - Import the public key used by the package management system](#-02-step--import-the-public-key-used-by-the-package-management-system)
+- [03 - Create a list file for MongoDB](#-03-step--create-a-list-file-for-mongodb)
+- [04 - Reload local package database](#-04-step--reload-local-package-database)
+- [05 - Install MongoDB](#-05-step--install-mongodb)
+- [06 - Start MongoDB](#-06-step--start-mongodb)
+- [07 - Start automatically MongoDB after reboot](#-07-step--start-automatically-mongodb-after-reboot)
+- [08 - Check MongoDB](#-08-step--check-mongodb)
+- [09 - Begin using MongoDB](#-09-step--begin-using-mongodb)
+- [Fast Step](#fast-step)
+
 
 <br>
 
