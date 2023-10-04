@@ -1,20 +1,135 @@
-### Install MongoDB
+### Install MongoDB on Ubuntu
 
 
+<br>
 
 
-
-
-
-- Check Ubuntu 
+### 1 - Platform Support
+- 22.04 LTS ("Jammy")
+- 20.04 LTS ("Focal")
+- only supports the 64-bit versions
 ```sh
-cat /etc/lsb-release
+hostnamectl
 ```
-result
+result :
 ```sh
-DISTRIB_ID=Ubuntu
-DISTRIB_RELEASE=22.04
-DISTRIB_CODENAME=jammy
-DISTRIB_DESCRIPTION="Ubuntu 22.04.2 LTS"
+Icon name        : computer-vm
+Chassis          : vm
+Machine ID       : 3fc6fd10f0fd96d900cedf724258e414
+Boot ID          : 04b23146c31948539da67f06b3097320
+Virtualization   : kvm
+Operating System : Ubuntu 22.04.2 LTS   <---
+Kernel           : Linux 5.15.0-70-generic
+Architecture     : x86-64   <---
+Hardware Vendor  : Red Hat
+Hardware Model   : KVM
 ```
 
+
+<br>
+
+
+### 2 - Import the public key used by the package management system
+```sh
+sudo apt-get install gnupg curl
+```
+```sh
+curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+```
+
+
+<br>
+
+
+### 3 - Create a list file for MongoDB
+```sh
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+```
+
+
+<br>
+
+
+### 4 - Reload local package database
+```sh
+sudo apt-get update
+```
+
+
+<br>
+
+
+### 5 - Install MongoDB
+```sh
+sudo apt-get install -y mongodb-org
+```
+
+
+<br>
+
+
+### 6 - Start MongoDB
+
+```sh
+hostnamectl
+```
+
+
+<br>
+
+
+### 1 - Platform Support
+- 22.04 LTS ("Jammy")
+- 20.04 LTS ("Focal")
+- only supports the 64-bit versions
+```sh
+hostnamectl
+```
+
+
+<br>
+
+
+### 1 - Platform Support
+- 22.04 LTS ("Jammy")
+- 20.04 LTS ("Focal")
+- only supports the 64-bit versions
+```sh
+hostnamectl
+```
+
+
+<br>
+
+
+### 1 - Platform Support
+- 22.04 LTS ("Jammy")
+- 20.04 LTS ("Focal")
+- only supports the 64-bit versions
+```sh
+hostnamectl
+```
+
+
+<br>
+
+
+### 1 - Platform Support
+- 22.04 LTS ("Jammy")
+- 20.04 LTS ("Focal")
+- only supports the 64-bit versions
+```sh
+hostnamectl
+```
+
+
+<br>
+
+
+### 1 - Platform Support
+- 22.04 LTS ("Jammy")
+- 20.04 LTS ("Focal")
+- only supports the 64-bit versions
+```sh
+hostnamectl
+```
