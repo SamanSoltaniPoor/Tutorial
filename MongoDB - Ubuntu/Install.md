@@ -29,19 +29,18 @@ only supports the 64-bit versions
 ```sh
 hostnamectl
 ```
-Output :
-```sh
-Icon name        : computer-vm
-Chassis          : vm
-Machine ID       : 3fc6fd10f0fd96d900cedf724258e414
-Boot ID          : 04b23146c31948539da67f06b3097320
-Virtualization   : kvm
-Operating System : Ubuntu 22.04.2 LTS   <---
-Kernel           : Linux 5.15.0-70-generic
-Architecture     : x86-64   <---
-Hardware Vendor  : Red Hat
-Hardware Model   : KVM
-```
+> ***Output :*** \
+> \
+> Icon name : computer-vm \
+> Chassis : vm \
+> Machine ID : 3fc6fd10f0fd96d900cedf724258e414 \
+> Boot ID : 04b23146c31948539da67f06b3097320 \
+> Virtualization : kvm \
+> :green_circle: Operating System : Ubuntu 22.04.2 LTS \
+> Kernel : Linux 5.15.0-70-generic \
+> :green_circle: Architecture : x86-64 \
+> Hardware Vendor : Red Hat \
+> Hardware Model : KVM
 
 
 <br>
@@ -108,18 +107,17 @@ systemctl enable mongod
 ```sh
 systemctl status mongod
 ```
-Output :
-```sh
-● mongod.service - MongoDB Database Server
-Loaded   : loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
-Active   : active (running) since Wed 2023-10-04 17:40:19 UTC; 1min 36s ago   <---
-Docs     : https://docs.mongodb.org/manual
-Main PID : 3152 (mongod)
-Memory   : 150.1M
-CPU      : 2.326s
-CGroup: /system.slice/mongod.service
-└─3152 /usr/bin/mongod --config /etc/mongod.conf
-```
+> ***Output :*** \
+> \
+> ● mongod.service - MongoDB Database Server \
+> Loaded : loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled) \
+> :green_circle: Active : active (running) since Wed 2023-10-04 17:40:19 UTC; 1min 36s ago \
+> Docs : httpss://docs.mongodb.org/manual \
+> Main PID : 3152 (mongod) \
+> Memory : 150.1M \
+> CPU : 2.326s \
+> CGroup: /system.slice/mongod.service \
+> └─3152 /usr/bin/mongod --config /etc/mongod.conf
 
 
 <br>
@@ -130,3 +128,11 @@ To get started with MongoDB
 ```sh
 mongosh
 ```
+> ***Output :*** \
+> \
+> Current Mongosh Log ID : 651decd8ba0d52ac4d3aef43 \
+> Connecting to : mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.1 \
+> :green_circle: Using MongoDB : 7.0.2 \
+> :green_circle: Using Mongosh : 2.0.1 \
+> ... \
+> test>
