@@ -1,6 +1,6 @@
 # Tutorial / MongoDB / User
-MongoDB does not require a username or password to access or modify the database
-But
+MongoDB does not require a username or password to access or modify the database \
+But \
 I recommend enabling and configuring mandatory authentication
 
 
