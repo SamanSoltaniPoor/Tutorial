@@ -1,40 +1,33 @@
-# Tutorial / MongoDB / User.md
+# Tutorial / MongoDB / User
+MongoDB does not require a username or password to access or modify the database
 
 
 <br>
 
 
-## ( 01 step ) Adjusting the Firewall
-27017 port for MongoDB
+## ( 01 step ) Create admin user for all customer user
+4444 is your password
 ```sh
-sudo ufw enable
-```
-87.193.128.41 is your PC IP
-```sh
-sudo ufw allow from 87.193.128.41 to any port 27017
+use admin
 ```
 ```sh
-sudo ufw status
+db.createUser({user:'siteUserAdmin', pwd: '55555', roles:['userAdminAnyDatabase']})
+```
+```sh
+db.auth('siteUserAdmin', '4444')
 ```
 
 
 <br>
 
 
-## ( 02 step ) Configuring a Public bindIP
+## ( 02 step ) Create customer user
+saman is your username
+55555 is your password
+authgram is your database
 ```sh
-sudo nano /etc/mongod.conf
+db.createUser({user:'saman', pwd: '55555', roles:[{db:'authgram', role:'readWrite'}]})
 ```
-24.95.162.31 is your VPS IP
-```sh
-net:
-  port: 27017
-  bindIp: 127.0.0.1,24.95.162.31
-```
-```sh
-sudo systemctl restart mongod
-```
-
 
 <br>
 
