@@ -5,6 +5,6 @@ powered by : [SamanSoltaniPoor.com](https://SamanSoltaniPoor.com)
 <br>
 
 
-* MongoDB - Ubuntu
+* MongoDB
 	* [Install on Ubuntu](https://github.com/SamanSoltaniPoor/Tutorial/blob/main/MongoDB%20/Install%20on%20Ubuntu.md)
 
