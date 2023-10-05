@@ -1,4 +1,4 @@
-# MongoDB - Ubuntu - Install
+# MongoDB - Install on Ubuntu
 - [Fast Step](#fast-step)
 - [01 - Platform Support](#-01-step--platform-support)
 - [02 - Import the public key used by the package management system](#-02-step--import-the-public-key-used-by-the-package-management-system)
