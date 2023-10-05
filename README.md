@@ -6,6 +6,6 @@ powered by : [SamanSoltaniPoor.com](https://SamanSoltaniPoor.com)
 
 
 * MongoDB
-	* [Install on Ubuntu](https://github.com/SamanSoltaniPoor/Tutorial/blob/main/MongoDB%20/Install%20on%20Ubuntu.md)
-	* [Commands](https://github.com/SamanSoltaniPoor/Tutorial/blob/main/MongoDB%20/Commands.md)
+	* [Install on Ubuntu](https://github.com/SamanSoltaniPoor/Tutorial/blob/main/MongoDB/Install%20on%20Ubuntu.md)
+	* [Commands](https://github.com/SamanSoltaniPoor/Tutorial/blob/main/MongoDB/Commands.md)
 
