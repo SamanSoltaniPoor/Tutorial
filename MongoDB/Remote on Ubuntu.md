@@ -4,46 +4,36 @@
 <br>
 
 
-## Fast Step
-Just run this code \
-it's Done :100:
+## ( 01 step ) Adjusting the Firewall
+27017 port for MongoDB
 ```sh
-sudo apt-get install gnupg curl; curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor; echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list; sudo apt-get update; sudo apt-get install -y mongodb-org; systemctl start mongod; systemctl enable mongod; mongosh
+sudo ufw enable
 ```
-
-<br>
-
-
-## ( 01 step ) Platform Support
-22.04 LTS ("Jammy")\
-20.04 LTS ("Focal")\
-only supports the 64-bit versions
+87.193.128.41 is your PC IP
 ```sh
-hostnamectl
+sudo ufw allow from 87.193.128.41 to any port 27017
 ```
-> ***Output :*** \
-> \
-> Icon name : computer-vm \
-> Chassis : vm \
-> Machine ID : 3fc6fd10f0fd96d900cedf724258e414 \
-> Boot ID : 04b23146c31948539da67f06b3097320 \
-> Virtualization : kvm \
-> :green_circle: Operating System : Ubuntu 22.04.2 LTS \
-> Kernel : Linux 5.15.0-70-generic \
-> :green_circle: Architecture : x86-64 \
-> Hardware Vendor : Red Hat \
-> Hardware Model : KVM
+```sh
+sudo ufw status
+```
 
 
 <br>
 
 
-## ( 02 step ) Import the public key used by the package management system
+## ( 02 step ) Configuring a Public bindIP
 ```sh
-sudo apt-get install gnupg curl
+sudo nano /etc/mongod.conf
+```
+24.95.162.31 is your VPS IP
+```sh
+net:
+  port: 27017
+  bindIp: 127.0.0.1,24.95.162.31
 ```
 ```sh
-curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+net:
+sudo systemctl restart mongod
 ```
 
 
