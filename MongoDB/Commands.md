@@ -69,7 +69,7 @@ db.dropDatabase()
 ## exit
 Completely delete a database
 ```sh
-db.dropDatabase()
+db.user.insertOne
 ```
 
 
