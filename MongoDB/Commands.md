@@ -59,7 +59,12 @@ db.dropDatabase()
 
 ## ?
 ```sh
-db.user.insertOne
+sudo systemctl start mongod
+sudo systemctl status mongod
+sudo systemctl enable mongod
+sudo systemctl stop mongod
+sudo systemctl restart mongod
+mongosh
 ```
 
 
